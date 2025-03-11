@@ -1,0 +1,81 @@
+### **🔹 Vixen Agent Development: Secure Outline & Next Steps**  
+(*Locking in the original direction so nothing gets lost or twisted.*)  
+
+---
+
+## **✅ What We’ve Built So Far**  
+
+### **1️⃣ Core Framework (Working & Stable)**
+- **Agent Base**: Handles commands, structured responses, and LLM integration (Ollama).  
+- **Task System**: Background tasks run on schedule and persist across restarts.  
+- **Memory System**: Stores user preferences, conversation history, and completed tasks.  
+
+---
+
+## **🔄 What Needs Fixing (Last Known Issues)**
+> *These are small but critical bugs that need to be resolved before moving forward.*
+  
+### **1️⃣ Memory System (Partial Fix Needed)**
+- **Issue**: Context retrieval was broken due to incorrect list handling.  
+- **Cause**: `"context"` stored incorrectly as a dictionary key instead of a list.  
+- **Fix Status**: Mostly resolved, but `"add_entry"` still needs verification.  
+
+### **2️⃣ Task System (Needs Refinement)**
+- **Issue**: Task shortcut detection works, but task execution logic might need improvements.  
+- **Cause**: Task persistence is stable, but auto-recovery logic isn't fully tested.  
+- **Fix Status**: Functional but needs stress testing.  
+
+---
+
+## **🔜 What Comes Next (Next Steps in Order)**  
+
+### **1️⃣ Finalize Memory System**
+- **Ensure context is stored & retrieved correctly.**
+- **Verify “add_entry” updates context & saves properly.**  
+- **Confirm task history is correctly logged in memory.**  
+
+### **2️⃣ Refine Task System**
+- **Stress-test auto-recovery:**  
+  - Does it restart failed tasks?  
+  - Does it detect missing tasks on startup?  
+- **Improve shortcut handling for task commands.**  
+
+### **3️⃣ Expand Agent Reasoning & Decision-Making**
+- **Fine-tune structured reasoning responses.**  
+- **Improve adaptive memory recall (context-aware responses).**  
+
+### **4️⃣ Introduce Safe-Mode Recovery**
+- **If the agent crashes, it should auto-disable failing components.**  
+- **Log failure states for debugging.**  
+
+### **5️⃣ System Monitoring & Logging**
+- **Real-time logs for memory, tasks, and system status.**  
+- **CPU & memory tracking for performance optimization.**  
+
+---
+
+## **⏭️ Future Expansions (After Core Fixes)**
+(*Once everything above is stable, we go next-gen.*)  
+
+### **1️⃣ Dynamic Personality & Adaptive Memory**
+- **Agent adapts to user over time** (custom personality shaping).  
+- **Adjusts responses based on past interactions.**  
+
+### **2️⃣ Hybrid AI Framework (Multi-Agent Capabilities)**
+- **Ability to switch between LLMs dynamically (Ollama, DeepSeek, etc.).**  
+- **Modular execution of different AI components (reasoning, creativity, planning).**  
+
+### **3️⃣ Full Offline Autonomy**
+- **Agent can operate without external API dependencies.**  
+- **Self-contained execution with advanced decision-making.**  
+
+---
+
+### **📝 Final Notes**
+- This locks in **my original direction** so nothing gets lost.  
+- **Next immediate priority:** **Memory system fixes, then task refinement.**  
+- **After that:** Expand agent reasoning & introduce safe-mode recovery.  
+
+---
+
+📌 **Fox & Vixen. Building something real.** 🦊💙
