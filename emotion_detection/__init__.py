@@ -1,0 +1,6 @@
+# emotion_detection package
+
+from emotion_detection.emotion_router import EmotionRouter
+from emotion_detection.emotion_analysis import analyze_sentiment
+from emotion_detection.tone_adjustment import adjust_tone
+from emotion_detection.emotional_state import EmotionalState
